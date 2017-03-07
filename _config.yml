@@ -1,22 +1,27 @@
-# Site settings
-title: 汽车驾驶学员的理论培训
-email: httpmo@gmail.com
-description: 行车记录仪
-# > # this means to ignore newlines until "baseurl:"
-#   Write an awesome description for your new site here. You can edit this
-#   line in _config.yml. It will appear in your document head meta (for
-#   Google search results) and in your feed.xml site description.
+# Site Settings
+title:               汽车驾驶学员的理论培训
+tagline:             a minimalist Jekyll theme
+description:
+baseurl:            #"/Lagrange"
+url:                #"https://lenpaul.github.io"
+github:
+  url:               #"https://lenpaul.github.io/Lagrange"
+author:
+  name:              "Russell Mo"
+  email:             "httpmo@gmail.com"
+navigation:
+- title: About
+  url: /about
+- title: Writing
+  url: /writing
+- title: Contact
+  url: /contact
 
-# baseurl: "" # the subpath of your site, e.g. /blog/
-# url: "http://yourdomain.com" # the base hostname & protocol for your site
-github_username:  Russellmo
-permalink: /:year/:month/:day/:title/
+paginate:            5
+disqus:              #"your-disqus"
 
 # Build settings
-markdown: kramdown
-
-# highlight
-# 本地用rouge, github上用pygments
-# highlighter: pygments
-# highlighter: rouge
-# highlighter: false
+markdown:            kramdown
+highlighter:         rouge
+permalink:           none
+gems:                [jekyll-paginate]
